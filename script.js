@@ -33,6 +33,7 @@ document
 
     //TExt
     document.querySelector(".site-title").textContent = "короткие ссылки";
+    document.querySelector(".number").textContent = "/ 01 /";
   });
 document
   .querySelector(".category-element-2")
@@ -64,6 +65,7 @@ document
       .classList.remove("active-link");
 
     document.querySelector(".site-title").textContent = "Био-страницы";
+    document.querySelector(".number").textContent = "/ 02 /";
   });
 document
   .querySelector(".category-element-3")
@@ -95,6 +97,7 @@ document
     console.log("salom-3");
 
     document.querySelector(".site-title").textContent = "QR-коды";
+    document.querySelector(".number").textContent = "/ 03 /";
   });
 document
   .querySelector(".category-element-4")
@@ -126,6 +129,7 @@ document
     console.log("salom-4");
 
     document.querySelector(".site-title").textContent = "Vcard-ссылки";
+    document.querySelector(".number").textContent = "/ 04 /";
   });
 document
   .querySelector(".category-element-5")
@@ -157,6 +161,8 @@ document
     console.log("salom-5");
 
     document.querySelector(".site-title").textContent = "Ссылки на файлы";
+
+    document.querySelector(".number").textContent = "/ 05 /";
   });
 document
   .querySelector(".category-element-6")
@@ -188,6 +194,7 @@ document
     console.log("salom-6");
 
     document.querySelector(".site-title").textContent = "AI-ассистент";
+    document.querySelector(".number").textContent = "/ 06 /";
   });
 
 //Buttons
