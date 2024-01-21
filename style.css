@@ -9,6 +9,7 @@ html {
 }
 body {
   background-color: var(--color-black);
+  font-family: sans-serif;
 }
 
 :root {
@@ -19,6 +20,13 @@ body {
 
 .d-flex {
   display: flex;
+}
+
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
 }
 
 /* General buttons */
@@ -118,6 +126,9 @@ nav .logo {
   left: 0;
   top: 50%;
 }
+.give img {
+  width: 20rem;
+}
 
 .buttons {
   display: flex;
@@ -140,6 +151,7 @@ nav .logo {
   line-height: 1.89rem;
   color: var(--color-white);
   opacity: 0.15;
+  cursor: pointer;
 }
 .active-link {
   font-weight: bold;
@@ -196,7 +208,8 @@ nav .logo {
   text-align: center;
 }
 .app-img {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .app-settings {
@@ -245,7 +258,7 @@ nav .logo {
   line-height: 2.16rem;
   opacity: 0.65;
 }
-.right-info span {
+.right-info .bold-text {
   font-weight: bold;
 }
 
