@@ -1,6 +1,23 @@
 "use strict";
 
 //First section
+document.querySelector(".burger").addEventListener("click", function () {
+  document.querySelector(".mobile-menu-box").classList.remove("d-none");
+  document.querySelector(".mobile-menu-box").classList.add("d-block");
+});
+
+document.querySelector(".close-menu").addEventListener("click", function () {
+  document.querySelector(".mobile-menu-box").classList.remove("d-block");
+  document.querySelector(".mobile-menu-box").classList.add("d-none");
+});
+
+document
+  .querySelector(".close-menu-icon")
+  .addEventListener("click", function () {
+    document.querySelector(".mobile-menu-box").classList.remove("d-block");
+    document.querySelector(".mobile-menu-box").classList.add("d-none");
+  });
+
 document
   .querySelector(".category-element-1")
   .addEventListener("click", function () {
@@ -34,6 +51,8 @@ document
     //TExt
     document.querySelector(".site-title").textContent = "короткие ссылки";
     document.querySelector(".number").textContent = "/ 01 /";
+    document.querySelector(".mobile-menu-box").classList.remove("d-block");
+    document.querySelector(".mobile-menu-box").classList.add("d-none");
   });
 document
   .querySelector(".category-element-2")
@@ -66,6 +85,8 @@ document
 
     document.querySelector(".site-title").textContent = "Био-страницы";
     document.querySelector(".number").textContent = "/ 02 /";
+    document.querySelector(".mobile-menu-box").classList.remove("d-block");
+    document.querySelector(".mobile-menu-box").classList.add("d-none");
   });
 document
   .querySelector(".category-element-3")
@@ -98,6 +119,8 @@ document
 
     document.querySelector(".site-title").textContent = "QR-коды";
     document.querySelector(".number").textContent = "/ 03 /";
+    document.querySelector(".mobile-menu-box").classList.remove("d-block");
+    document.querySelector(".mobile-menu-box").classList.add("d-none");
   });
 document
   .querySelector(".category-element-4")
@@ -130,6 +153,8 @@ document
 
     document.querySelector(".site-title").textContent = "Vcard-ссылки";
     document.querySelector(".number").textContent = "/ 04 /";
+    document.querySelector(".mobile-menu-box").classList.remove("d-block");
+    document.querySelector(".mobile-menu-box").classList.add("d-none");
   });
 document
   .querySelector(".category-element-5")
@@ -163,6 +188,8 @@ document
     document.querySelector(".site-title").textContent = "Ссылки на файлы";
 
     document.querySelector(".number").textContent = "/ 05 /";
+    document.querySelector(".mobile-menu-box").classList.remove("d-block");
+    document.querySelector(".mobile-menu-box").classList.add("d-none");
   });
 document
   .querySelector(".category-element-6")
@@ -195,6 +222,227 @@ document
 
     document.querySelector(".site-title").textContent = "AI-ассистент";
     document.querySelector(".number").textContent = "/ 06 /";
+    document.querySelector(".mobile-menu-box").classList.remove("d-block");
+    document.querySelector(".mobile-menu-box").classList.add("d-none");
+  });
+
+document
+  .querySelector(".category-element-desktop-1")
+  .addEventListener("click", function () {
+    //IMG
+    document.querySelector(".give--1").classList.remove("d-none");
+    document.querySelector(".give--1").classList.add("d-block");
+    document.querySelector(".give--2").classList.remove("d-block");
+    document.querySelector(".give--3").classList.remove("d-block");
+    document.querySelector(".give--4").classList.remove("d-block");
+    document.querySelector(".give--5").classList.remove("d-block");
+    document.querySelector(".give--6").classList.remove("d-block");
+
+    // Active-link
+    document
+      .querySelector(".category-element-desktop-1")
+      .classList.add("active-link");
+    document
+      .querySelector(".category-element-desktop-2")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-3")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-4")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-5")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-6")
+      .classList.remove("active-link");
+
+    //TExt
+    document.querySelector(".site-title").textContent = "короткие ссылки";
+    document.querySelector(".number").textContent = "/ 01 /";
+    document.querySelector(".mobile-menu-box").classList.remove("d-block");
+    document.querySelector(".mobile-menu-box").classList.add("d-none");
+  });
+document
+  .querySelector(".category-element-desktop-2")
+  .addEventListener("click", function () {
+    document.querySelector(".give--2").classList.add("d-block");
+    document.querySelector(".give--1").classList.remove("d-block");
+    document.querySelector(".give--1").classList.add("d-none");
+    document.querySelector(".give--3").classList.remove("d-block");
+    document.querySelector(".give--4").classList.remove("d-block");
+    document.querySelector(".give--5").classList.remove("d-block");
+    document.querySelector(".give--6").classList.remove("d-block");
+    console.log("salom-2");
+
+    document
+      .querySelector(".category-element-desktop-2")
+      .classList.add("active-link");
+    document
+      .querySelector(".category-element-desktop-1")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-3")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-4")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-5")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-6")
+      .classList.remove("active-link");
+
+    document.querySelector(".site-title").textContent = "Био-страницы";
+    document.querySelector(".number").textContent = "/ 02 /";
+    document.querySelector(".mobile-menu-box").classList.remove("d-block");
+    document.querySelector(".mobile-menu-box").classList.add("d-none");
+  });
+document
+  .querySelector(".category-element-desktop-3")
+  .addEventListener("click", function () {
+    document.querySelector(".give--3").classList.add("d-block");
+    document.querySelector(".give--2").classList.remove("d-block");
+    document.querySelector(".give--1").classList.remove("d-block");
+    document.querySelector(".give--1").classList.add("d-none");
+    document.querySelector(".give--4").classList.remove("d-block");
+    document.querySelector(".give--5").classList.remove("d-block");
+    document.querySelector(".give--6").classList.remove("d-block");
+
+    document
+      .querySelector(".category-element-desktop-3")
+      .classList.add("active-link");
+    document
+      .querySelector(".category-element-desktop-2")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-1")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-4")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-5")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-6")
+      .classList.remove("active-link");
+    console.log("salom-3");
+
+    document.querySelector(".site-title").textContent = "QR-коды";
+    document.querySelector(".number").textContent = "/ 03 /";
+    document.querySelector(".mobile-menu-box").classList.remove("d-block");
+    document.querySelector(".mobile-menu-box").classList.add("d-none");
+  });
+document
+  .querySelector(".category-element-desktop-4")
+  .addEventListener("click", function () {
+    document.querySelector(".give--4").classList.add("d-block");
+    document.querySelector(".give--2").classList.remove("d-block");
+    document.querySelector(".give--3").classList.remove("d-block");
+    document.querySelector(".give--1").classList.remove("d-block");
+    document.querySelector(".give--1").classList.add("d-none");
+    document.querySelector(".give--5").classList.remove("d-block");
+    document.querySelector(".give--6").classList.remove("d-block");
+
+    document
+      .querySelector(".category-element-desktop-4")
+      .classList.add("active-link");
+    document
+      .querySelector(".category-element-desktop-2")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-3")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-1")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-5")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-6")
+      .classList.remove("active-link");
+    console.log("salom-4");
+
+    document.querySelector(".site-title").textContent = "Vcard-ссылки";
+    document.querySelector(".number").textContent = "/ 04 /";
+    document.querySelector(".mobile-menu-box").classList.remove("d-block");
+    document.querySelector(".mobile-menu-box").classList.add("d-none");
+  });
+document
+  .querySelector(".category-element-desktop-5")
+  .addEventListener("click", function () {
+    document.querySelector(".give--5").classList.add("d-block");
+    document.querySelector(".give--2").classList.remove("d-block");
+    document.querySelector(".give--3").classList.remove("d-block");
+    document.querySelector(".give--4").classList.remove("d-block");
+    document.querySelector(".give--1").classList.remove("d-block");
+    document.querySelector(".give--1").classList.add("d-none");
+    document.querySelector(".give--6").classList.remove("d-block");
+
+    document
+      .querySelector(".category-element-desktop-5")
+      .classList.add("active-link");
+    document
+      .querySelector(".category-element-desktop-2")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-3")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-4")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-1")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-6")
+      .classList.remove("active-link");
+    console.log("salom-5");
+
+    document.querySelector(".site-title").textContent = "Ссылки на файлы";
+
+    document.querySelector(".number").textContent = "/ 05 /";
+    document.querySelector(".mobile-menu-box").classList.remove("d-block");
+    document.querySelector(".mobile-menu-box").classList.add("d-none");
+  });
+document
+  .querySelector(".category-element-desktop-6")
+  .addEventListener("click", function () {
+    document.querySelector(".give--6").classList.add("d-block");
+    document.querySelector(".give--2").classList.remove("d-block");
+    document.querySelector(".give--3").classList.remove("d-block");
+    document.querySelector(".give--4").classList.remove("d-block");
+    document.querySelector(".give--5").classList.remove("d-block");
+    document.querySelector(".give--1").classList.remove("d-block");
+    document.querySelector(".give--1").classList.add("d-none");
+
+    document
+      .querySelector(".category-element-desktop-6")
+      .classList.add("active-link");
+    document
+      .querySelector(".category-element-desktop-2")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-3")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-4")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-5")
+      .classList.remove("active-link");
+    document
+      .querySelector(".category-element-desktop-1")
+      .classList.remove("active-link");
+
+    document.querySelector(".site-title").textContent = "AI-ассистент";
+    document.querySelector(".number").textContent = "/ 06 /";
+    document.querySelector(".mobile-menu-box").classList.remove("d-block");
+    document.querySelector(".mobile-menu-box").classList.add("d-none");
   });
 
 //Buttons
